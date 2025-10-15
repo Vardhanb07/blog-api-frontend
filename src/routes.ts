@@ -1,9 +1,14 @@
 import { createBrowserRouter } from "react-router";
-import App from "./App";
+import Home from "./pages/Home";
+import Post from "./pages/Post";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    Component: App
-  }
-])
+    Component: Home,
+  },
+  {
+    path: "post",
+    Component: Post,
+  },
+]);
