@@ -1,3 +1,6 @@
+import { Link } from "react-router";
+
+
 interface propTypes {
   themeState: {
     mode: string;
@@ -12,11 +15,13 @@ export default function Navbar({ themeState, dispatch }: propTypes) {
   return (
     <div className="flex p-4">
       <div className="flex-2 text-center text-2xl">
-        <p className="cursor-pointer">Blogs</p>
+        <p className="cursor-pointer">
+          <Link to="/">Blogs</Link>
+        </p>
       </div>
       <div className="flex-2 text-center text-2xl">
         <p className="cursor-pointer" title="About blogs">
-          About
+          <Link to="/about">About</Link>
         </p>
       </div>
       <div className="flex-1 flex justify-center items-center">
