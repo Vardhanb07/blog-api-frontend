@@ -2,17 +2,7 @@ import darkModeImg from "../assets/images/dark_mode.svg";
 import lightModeImg from "../assets/images/light_mode.svg";
 import { useReducer } from "react";
 import Navbar from "../components/Navbar";
-
-type stateType = {
-  mode: string;
-  imgSrc: string;
-  bgColor: string;
-  textColor: string;
-};
-
-type actionType = {
-  type: "dark" | "light";
-};
+import type { stateType, actionType } from "../utils/types";
 
 function reducer(state: stateType, action: actionType): stateType {
   if (action.type === "dark") {

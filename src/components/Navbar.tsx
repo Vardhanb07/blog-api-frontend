@@ -1,17 +1,7 @@
 import { Link } from "react-router";
+import type { navBarPropTypes } from "../utils/types";
 
-
-interface propTypes {
-  themeState: {
-    mode: string;
-    imgSrc: string;
-    bgColor: string;
-    textColor: string;
-  };
-  dispatch: React.ActionDispatch<[action: { type: "dark" | "light" }]>;
-}
-
-export default function Navbar({ themeState, dispatch }: propTypes) {
+export default function Navbar({ themeState, dispatch }: navBarPropTypes) {
   return (
     <div className="flex p-4">
       <div className="flex-2 text-center text-2xl">
