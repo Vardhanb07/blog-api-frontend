@@ -1,3 +1,5 @@
+import React from "react";
+
 export type stateType = {
   mode: string;
   imgSrc: string;
@@ -13,3 +15,7 @@ export interface navBarPropTypes {
   themeState: stateType;
   dispatch: React.ActionDispatch<[action: actionType]>;
 }
+
+export type childrenType = {
+  children: React.ReactNode;
+};
