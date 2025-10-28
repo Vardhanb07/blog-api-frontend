@@ -3,6 +3,7 @@ import React from "react";
 export type stateType = {
   mode: string;
   imgSrc: string;
+  outwardImgSrc: string
   bgColor: string;
   textColor: string;
 };
@@ -19,3 +20,8 @@ export interface navBarPropTypes {
 export type childrenType = {
   children: React.ReactNode;
 };
+
+export interface PreviewPropTypes {
+  id: number;
+  title: string;
+}
