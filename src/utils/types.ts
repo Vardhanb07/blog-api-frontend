@@ -3,7 +3,7 @@ import React from "react";
 export type stateType = {
   mode: string;
   imgSrc: string;
-  outwardImgSrc: string
+  outwardImgSrc: string;
   bgColor: string;
   textColor: string;
 };
@@ -24,4 +24,17 @@ export type childrenType = {
 export interface PreviewPropTypes {
   id: number;
   title: string;
+}
+
+export interface CommentsPropTypes {
+  id: number;
+}
+
+export interface CreateCommentPropTypes {
+  id: number;
+}
+
+export interface CommentPropTypes {
+  content: string;
+  userId: number;
 }

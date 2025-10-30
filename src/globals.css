@@ -2,5 +2,5 @@
 @import "tailwindcss";
 
 @theme {
-  --font-jbmono: "JetBrains Mono";
+  --font-jbmono: "JetBrains Mono", "monospace";
 }

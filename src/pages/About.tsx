@@ -10,6 +10,7 @@ export default function About() {
       className={`${themeState.bgColor} ${themeState.textColor} h-screen flex flex-col font-jbmono`}
     >
       <Navbar themeState={themeState} dispatch={dispatch} />
+      <hr />
       <div className="flex flex-col h-full justify-center items-center gap-1">
         <p className="text-2xl">
           Features slop written by{" "}
