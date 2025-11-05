@@ -43,7 +43,7 @@ export default function Post() {
             <p>{content}</p>
           </div>
           <div className="flex-4 flex justify-center">
-            <Comments id={id}/>
+            <Comments id={id} />
           </div>
         </div>
       )}

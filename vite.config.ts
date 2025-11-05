@@ -23,5 +23,11 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
+    test: {
+      environment: "jsdom",
+    },
+    build: {
+      sourcemap: "inline",
+    },
   };
 });

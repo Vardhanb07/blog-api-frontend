@@ -27,14 +27,18 @@ export interface PreviewPropTypes {
 }
 
 export interface CommentsPropTypes {
-  id: number;
+  id?: string;
 }
 
 export interface CreateCommentPropTypes {
-  id: number;
+  id?: string;
 }
 
 export interface CommentPropTypes {
   content: string;
   userId: number;
+}
+
+export interface PostUseParamsTypes {
+  id: string;
 }

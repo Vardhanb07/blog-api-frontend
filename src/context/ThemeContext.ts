@@ -6,6 +6,7 @@ const ThemeContext = createContext<stateType>({
   imgSrc: "",
   bgColor: "",
   textColor: "",
+  outwardImgSrc: "",
 });
 
 export default ThemeContext;

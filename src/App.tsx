@@ -15,6 +15,7 @@ import NoMatch from "./pages/NoMatch";
 function reducer(state: stateType, action: actionType): stateType {
   if (action.type === "dark") {
     return {
+      ...state,
       mode: "dark",
       imgSrc: darkModeImg,
       outwardImgSrc: outwardBlackImg,
@@ -23,6 +24,7 @@ function reducer(state: stateType, action: actionType): stateType {
     };
   }
   return {
+    ...state,
     mode: "light",
     imgSrc: lightModeImg,
     outwardImgSrc: outwardWhiteImg,
