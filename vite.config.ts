@@ -23,11 +23,13 @@ export default defineConfig(({ mode }) => {
         },
       },
     },
-    test: {
-      environment: "jsdom",
-    },
     build: {
       sourcemap: "inline",
+    },
+    test: {
+      globals: true,
+      environment: "jsdom",
+      setupFiles: "./tests/vitest.setup.ts",
     },
   };
 });
