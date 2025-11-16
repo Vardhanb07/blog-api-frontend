@@ -33,6 +33,18 @@ function reducer(state: stateType, action: actionType): stateType {
   };
 }
 
+export function AppRouter() {
+  return (
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/post/:id" element={<Post />} />
+      <Route path="*" element={<NoMatch />} />
+    </Routes>
+  );
+}
+
 export default function App() {
   const [themeState, dispatch] = useReducer(reducer, {
     mode: "dark",
@@ -45,13 +57,7 @@ export default function App() {
     <ThemeContext value={themeState}>
       <DisptachContext value={dispatch}>
         <BrowserRouter>
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/post/:id" element={<Post />} />
-            <Route path="*" element={<NoMatch />} />
-          </Routes>
+          <AppRouter />
         </BrowserRouter>
       </DisptachContext>
     </ThemeContext>
