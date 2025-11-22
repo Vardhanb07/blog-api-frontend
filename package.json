@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest --coverage",
     "test:ui": "vitest --ui"
   },
   "dependencies": {
@@ -29,7 +29,9 @@
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.4",
+    "@vitest/coverage-v8": "^4.0.7",
     "@vitest/ui": "^4.0.7",
+    "axios-mock-adapter": "^2.1.0",
     "babel-plugin-react-compiler": "^19.1.0-rc.3",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
