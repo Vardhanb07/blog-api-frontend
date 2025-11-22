@@ -42,3 +42,7 @@ export interface CommentPropTypes {
 export interface PostUseParamsTypes {
   id: string;
 }
+
+export interface ThemeProviderPropTypes {
+  children: React.ReactNode;
+}
